@@ -14,3 +14,8 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+for i in range(7):
+    if i == 5:
+        print('hi')
+    else:
+        continue
