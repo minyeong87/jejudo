@@ -23,22 +23,22 @@ DROP TABLE IF EXISTS `jeju_table`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `jeju_table` (
-  `사업장명` text,
-  `업종구분대분류` text,
-  `업종구분소분류` text,
-  `인허가일자` int DEFAULT NULL,
-  `인허가취소일자` text,
-  `영업상태명` text,
-  `상세영업상태명` text,
-  `폐업일자` text,
-  `휴업시작일자` text,
-  `휴업종료일자` text,
-  `재개업일자` text,
-  `소재지면적` double DEFAULT NULL,
-  `소재지전체주소` text,
-  `도로명전체주소` text,
-  `도로명우편번호` double DEFAULT NULL,
-  `데이터갱신일자` text
+  `Restaurant_name` text,
+  `Business_typeA` text,
+  `Business_typeB` text,
+  `Authorized_date` int DEFAULT NULL,
+  `Cancel_date` text,
+  `State` text,
+  `state_detail` text,
+  `closing_date` text,
+  `vacation_start_date` text,
+  `vacation_end_date` text,
+  `restarting_date` text,
+  `region_square` double DEFAULT NULL,
+  `full_address` text,
+  `full_address_new` text,
+  `postal code` double DEFAULT NULL,
+  `updated_date` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -63,4 +63,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-01-03 11:24:53
+-- Dump completed on 2023-01-03 11:34:53
